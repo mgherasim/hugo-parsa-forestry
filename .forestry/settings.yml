@@ -16,6 +16,8 @@ sections:
   label: About
   create: none
   match: "*"
+  templates:
+  - post
 - type: directory
   path: content/contact
   label: Contact
@@ -24,6 +26,7 @@ sections:
 - type: document
   path: config.yaml
   label: Configuration
+  read_only: false
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
